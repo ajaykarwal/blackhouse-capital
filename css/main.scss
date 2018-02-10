@@ -3,9 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Domine:400,700|Muli:400,700');
 
-@import 'reset';
 @import 'variables';
 @import 'mixins';
+
+@import 'reset';
+
 @import 'base';
 @import 'type';
 @import 'layout';

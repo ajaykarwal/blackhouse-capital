@@ -1,9 +1,5 @@
-%clearfix {
-    @include clearfix;
-}
-
-.cf,
-.clearfix {
+.clearfix,
+.cf {
     @include clearfix;
 }
 
