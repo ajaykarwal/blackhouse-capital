@@ -1,0 +1,17 @@
+<div class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <nav class="nav-container">
+    <h1 class="hidden">Main Navigation</h1>
+    <ul>
+        {% for page in site.pages %} {% if page.url != "/" %}
+        <li>
+            <a href="{{page.url|relative_url}}">{{page.title}}</a>
+        </li>
+        {% endif %} {% endfor %}
+    </ul>
+</nav>

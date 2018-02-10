@@ -1,0 +1,22 @@
+header[role='banner'] {
+  grid-area: h;
+}
+footer[role='contentinfo'] {
+  grid-area: f;
+}
+main[role='main'] {
+  grid-area: m;
+  padding:$space-l;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-areas: "h" "m" "f";
+}
+
+.container {
+  max-width: $container-width;
+  margin:auto;
+}

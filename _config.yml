@@ -1,0 +1,24 @@
+###### Site settings
+title            : Blackhouse Capital
+metatitle        : Investors in Blockchain and distributed ledger technology
+description      : Investors in Blockchain and distributed ledger technology
+tagline          : Investors in Blockchain and distributed ledger technology
+email            : hello@blackhouse.capital
+base_url         : http://blackhouse.capital
+encoding         : utf-8
+
+# google_analytics : UA-XXXXXXXX-1
+
+include: ["_pages"]
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+permalink: /:title/
+sass:
+  style: compressed
+
+future: false
