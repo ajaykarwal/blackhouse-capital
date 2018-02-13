@@ -1,3 +1,6 @@
+---
+---
+
 /**
  * @name		Shuffle Letters
  * @author		Martin Angelov
