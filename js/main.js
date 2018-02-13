@@ -1,6 +1,3 @@
----
----
-
 $(document).ready(function() {
     // Mobile navigation toggle button
     $('.nav-toggle').click(function() {

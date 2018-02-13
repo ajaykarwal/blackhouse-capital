@@ -1,16 +1,19 @@
 <header role="banner">
-  <div class="container">
-    <h1 class="logo cf">
-      <a href="{{'/'|relative_url}}">
-        Blackhouse<br>
-        Capital
-      </a>
-    </h1>
-    <p class="tagline">{{site.tagline | escape}}</p>
-
-    {% comment %}
-    {% include nav.html %} %}
-    {% endcomment %}
-    
+  <div class="header-wrapper">
+    <div class="container">
+      <h1 class="logo cf">
+        <a href="{{'/'|relative_url}}">
+          <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.73 141.73">
+                <path d="M70.91 0h70.82v141.73H0V70.91A70.91 70.91 0 0 1 70.91 0z"/>
+              </svg>
+          </span>
+          <span class="text">
+            <span class="blackhouse">Blackhouse</span> <span class="capital">Capital</span>
+          </span>
+        </a>
+      </h1>
+      {% include nav.html %}
+    </div>
   </div>
 </header>

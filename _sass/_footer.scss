@@ -1,6 +1,7 @@
 footer[role='contentinfo'] {
-    background: $grey-verylight;
+    background: $grey-verydark;
     padding: $space-l;
+    color: $grey-medium;
 
     .heading {
         @include font-size(24px);

@@ -10,19 +10,23 @@ $grey-verylight: #e7e7e7;
 $grey-light: #cccccc;
 $grey-medium: #575756;
 $grey-dark: #333333;
-$grey-verydark: #222222;
+$grey-verydark: #111111;
 
-$accent: #607d8b;
+$accent: #fc371a;
 
 $brand-primary: $accent;
 $brand-secondary: $black;
 
-$font-body: 'Muli', sans-serif;
-$font-heading: 'Domine', serif;
+// $font-body: 'Muli', sans-serif;
+// $font-heading: 'Domine', serif;
+
+$font-body: 'Montserrat', sans-serif;
+$font-heading: $font-body;
 
 $fw-light: 300;
 $fw-normal: 400;
 $fw-bold: 700;
+$fw-x-bold: 800;
 
 $container-width: 1200px;
 

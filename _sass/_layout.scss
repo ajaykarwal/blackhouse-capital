@@ -6,17 +6,18 @@ footer[role='contentinfo'] {
 }
 main[role='main'] {
     grid-area: m;
-    padding: $space-l;
+    padding-bottom: $space-l;
 }
 
-.wrapper {
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: 1fr;
-    grid-template-areas: 'h' 'm' 'f';
-}
+// .wrapper {
+//     display: grid;
+//     grid-gap: 0;
+//     grid-template-columns: 1fr;
+//     grid-template-areas: 'h' 'm' 'f';
+// }
 
 .container {
     max-width: $container-width;
     margin: auto;
+    padding: 0 $space-l;
 }

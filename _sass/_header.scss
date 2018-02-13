@@ -1,10 +1,19 @@
 header[role='banner'] {
-    background: $black;
+    @include clearfix;
+    position: relative;
     color: $white;
-    padding: $space-xl $space-l;
+
     border-top: 4px solid $brand-primary;
 
+    .header-wrapper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: $space-l 0;
+        z-index: 10;
+    }
     .logo {
+        float: left;
         margin: 0;
         padding: 0;
         z-index: 1;
@@ -14,17 +23,37 @@ header[role='banner'] {
             text-decoration: none;
         }
     }
-    .tagline {
-        @include font-size(18px);
-        margin-top: $space;
-        margin-bottom: 0;
+    .icon {
+        float: left;
+        width: 50px;
+        height: auto;
+
+        svg {
+            width: inherit;
+            fill: $white;
+            transition-delay: 0.2s;
+        }
     }
 
-    svg {
-        width: 170px;
-        @media (min-width: $break-sm) {
-            width: auto;
+    .text {
+        @include font-size(24px);
+        float: left;
+        display: block;
+        text-align: left;
+        padding: 0;
+        margin-left: 10px;
+        margin-top: -2px;
+        transition-delay: 0.2s;
+
+        span {
+            display: block;
         }
+    }
+    .tagline {
+        display: none;
+        @include font-size(16px);
+        margin-top: $space;
+        margin-bottom: 0;
     }
 
     .nav-toggle {
@@ -89,20 +118,22 @@ header[role='banner'] {
 
         @media (min-width: $break-sm) {
             display: block;
-            margin-top: $space;
+            float: right;
+            text-align: right;
         }
 
         ul {
             list-style: none;
-            padding-left: 0;
-            margin-bottom: $space;
+            padding: 0;
+            margin: 0;
 
-            li {
-                margin-bottom: $space-xs;
-            }
             ul {
                 padding-left: $space;
             }
+        }
+
+        a {
+            color: $white;
         }
     }
 }

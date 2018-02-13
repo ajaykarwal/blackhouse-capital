@@ -1,7 +1,9 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Muli:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Domine:400,700|Muli:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,800');
+
 
 @import 'variables';
 @import 'mixins';
@@ -13,5 +15,6 @@
 @import 'layout';
 @import 'header';
 @import 'footer';
+@import 'hero';
 @import 'forms';
 @import 'utility';

@@ -11,14 +11,13 @@ html {
 }
 
 body {
+    @include svgBackground('#ffffff', 'e7e7e7', 'e7e7e7');
     height: 100%;
     overflow: auto;
-
     margin: auto;
-    background-color: $white;
     color: $black;
     font-family: $font-body;
-    font-weight: $fw-normal;
+    font-weight: $fw-light;
     font-size: 100%;
     line-height: 1.6;
 }
@@ -31,8 +30,10 @@ h5,
 h6 {
     color: $brand-primary;
     font-family: $font-heading;
-    font-weight: $fw-normal;
+    font-weight: $fw-x-bold;
     line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 
     a {
         color: $grey-dark;
@@ -41,7 +42,6 @@ h6 {
 
 h1 {
     @include font-size(36px);
-    margin-top: 0;
 
     @media (min-width: $break-sm) {
         @include font-size(40px);
